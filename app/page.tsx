@@ -16,8 +16,8 @@ export default function Home() {
 
   return (
     <StyledDiv>
-      <h1>Find the Weather in any city!</h1>
-      <p>Enter a city name below to get the current weather</p>
+      <h1>Weather Forecast</h1>
+      <p>Enter a city name below to get weather for the next 7days</p>
       <input type="text" value={city} placeholder="City name" onChange={(e) => setCity(e.target.value)} />
       <Link href={`/${city}`}>Get Weather</Link>
     </StyledDiv>
